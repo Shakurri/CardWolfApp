@@ -16,12 +16,18 @@
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/webgl.json", {onProgress: UnityProgress});
     </script>
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0PR4MWHZ1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-B0PR4MWHZ1');
+  </script>
   <body>
     <div class="webgl-content">
       <div id="unityContainer" style="width: 540px; height: 960px"></div>
-      <div class="footer">
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-      </div>
     </div>
     <div class="caption">
       <p>Created by <a href="https://x.com/TDIL_JP042?t=q1av4m0dCixYgMljLuMu1g&s=09">@TDIL_JP042</a></p>
